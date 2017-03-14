@@ -1,6 +1,6 @@
 var http = require('http');
-var heading = require('./modules/module-three.js').heading;
-var accountBalance = require('./modules/module-three.js').accountBalance;
+var heading = require('module-three.js').heading;
+var accountBalance = require('module-three.js').accountBalance;
 
 http.createServer(function(request, response) {
   //var result;
