@@ -8,7 +8,7 @@ var balance = toUSD(rand);
 //   var balance = toUSD(rand);
 //   return balance;
 // }
-
+console.log('balance');
 module.exports = {
   accountBalance: balance,
   heading: heading

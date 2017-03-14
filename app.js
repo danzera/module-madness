@@ -9,7 +9,7 @@ http.createServer(function(request, response) {
   // console.log('APP MODULE: ' + someNumber);
   // // respond with a status code, e.g. 404 Error (page not found)
   response.writeHead(200);
-  response.write(accountBalance);
+  response.write(heading + accountBalance);
   // we're done
   response.end();
   // method chain after createServer() to listen() on a port
