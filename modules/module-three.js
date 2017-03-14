@@ -3,13 +3,12 @@ var toUSD = require('./module-two.js');
 
 var heading = "Account Balance: \n";
 var rand = randomNumber(100, 1000000);
-var balance = toUSD(rand);
+console.log('module-3 balance: ' + toUSD(randomNumber(100, 1000000)));
 // function accountBalance() {
 //   var balance = toUSD(rand);
 //   return balance;
 // }
-console.log('balance');
 module.exports = {
-  accountBalance: balance,
+  accountBalance: 'hi',
   heading: heading
 };
