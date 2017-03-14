@@ -1,6 +1,6 @@
 var http = require('http');
-var heading = require('module-three.js').heading;
-var accountBalance = require('module-three.js').accountBalance;
+var heading = require('./modules/module-three.js').heading;
+var accountBalance = require('./modules/module-three.js').accountBalance;
 
 http.createServer(function(request, response) {
   //var result;
@@ -9,9 +9,9 @@ http.createServer(function(request, response) {
   // console.log('APP MODULE: ' + someNumber);
   // // respond with a status code, e.g. 404 Error (page not found)
   response.writeHead(200);
-  response.write();
+  response.write(heading + accountBalance);
   // we're done
-  response.end(heading + accountBalance);
+  response.end();
   // method chain after createServer() to listen() on a port
 }).listen(3000);
 

@@ -1,5 +1,5 @@
-var randomNumber = require('/module-one.js');
-var toUSD = require('/module-two.js');
+var randomNumber = require('./module-one.js');
+var toUSD = require('./module-two.js');
 
 var heading = "Account Balance: \n";
 var accountBalance;
