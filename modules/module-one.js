@@ -1,6 +1,8 @@
 // calculate a random number based on min/max inputs
 function randomNumber(min, max) {
-    return Math.floor(Math.random() * (1 + max - min) + min);
+    var rando = Math.floor(Math.random() * (1 + max - min) + min);
+    console.log('rando calculator: ' + rando);
+    return rando;
 }
 
 // make the randomNumber() function available
