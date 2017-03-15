@@ -1,14 +1,19 @@
 var randomNumber = require('./module-one.js');
 var toUSD = require('./module-two.js');
 
-var heading = "Account Balance: \n";
-var rand = randomNumber(100, 1000000);
-console.log('module-3 balance: ' + toUSD(randomNumber(100, 1000000)));
-// function accountBalance() {
-//   var balance = toUSD(rand);
-//   return balance;
-// }
+function calcUSD(min, max) {
+  var rand = randomNumber(min, max);
+  console.log(rand);
+  var balance = toUSD(rand);
+  console.log(balance);
+  return balance;
+}
+
+function heading() {
+  return "Account Balance:\n";
+}
+
 module.exports = {
-  accountBalance: 'hi',
+  calcUSD: calcUSD,
   heading: heading
 };
