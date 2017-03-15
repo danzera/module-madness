@@ -12,7 +12,7 @@ function toUSD(someNumber) {
            numString.substring(numString.length - 6, numString.length - 3) + ',' +
            numString.substring(numString.length - 3);
   }
-  console.log('usd function: ' + usd);
+  console.log('mod2: ' + usd);
   return usd;
 }
 
