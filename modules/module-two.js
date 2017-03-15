@@ -5,11 +5,14 @@ function toUSD(someNumber) {
   if (numString.length < 4) {
     usd += numString;
   } else if (numString.length < 7) {
-    usd += numString.substring(0, 3) + ',' + numString.substring(3);
-  } else {
-    usd += numString.substring(0, 1) + ',' + numString.substring(1, 4) + ',' + numString.substring(4);
+    usd += numString.substring(0, numString.length - 3) + ',' +
+           numString.substring(numString.length - 3);
+  } else if (numString.length < 10 ){
+    usd += numString.substring(0, numString.length - 6) + ',' +
+           numString.substring(numString.length - 6, numString.length - 3) + ',' +
+           numString.substring(numString.length - 3);
   }
-
+  console.log('usd function: ' + usd);
   return usd;
 }
 
